@@ -1,0 +1,9 @@
+.buttonStyle{
+    width: 40%;
+    margin-top: 15%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    border-radius: 10px;
+    align: center;
+}

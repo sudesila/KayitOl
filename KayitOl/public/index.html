@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./kayit.css">
+    <title>Üye Ol Modalı</title>
+</head>
+<body>
+
+<!-- Giriş butonunu sol üst köşeye almak için -->
+<div class="container mt-3 ml-3">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Giriş
+    </button>
+</div>
+
+<!-- Üye Ol Modalı -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Üye Ol</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Modal içeriği buraya taşındı -->
+                <div class="form-group">
+                    <label for="adSoyad">Ad Soyad:</label>
+                    <input type="text" id="adSoyad" name="adSoyad" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="kullaniciAdi">Kullanıcı Adı:</label>
+                    <input type="text" id="kullaniciAdi" name="kullaniciAdi" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="sifre">Şifre:</label>
+                    <input type="password" id="sifre" name="sifre" class="form-control" minlength="6" required>
+                </div>
+                <div class="form-group">
+                    <label for="sifreTekrar">Şifre Tekrar:</label>
+                    <input type="password" id="sifreTekrar" name="sifreTekrar" class="form-control" minlength="6" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="hesapOlustur()">Hesabınızı Oluşturun</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        // Bu satırı silebilirsiniz, modal otomatik olarak açılsın istemiyorsanız.
+        // $("#myModal").modal('show');
+    });
+
+    function hesapOlustur() {
+        // Burada hesap oluşturma işlemleri yapılabilir.
+        alert("Hesap oluşturuldu!");
+    }
+</script>
+
+</body>
+</html>
